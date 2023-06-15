@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Photo Printing App</title>
+  </head>
+  <body>
+    <h1>Your photos</h1>
+    <ul>
+      <% photos.forEach(function(photo) { %>
+        <li><img src="<%= photo.baseUrl %>=w300-h300" alt="Photo"></li>
+      <% }); %>
+    </ul>
+  </body>
+</html>
